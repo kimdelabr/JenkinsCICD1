@@ -1,1 +1,24 @@
 
+pipeline {
+    agent any
+
+    stages {
+        stage('BUILD') {
+            steps {
+                echo 'Message Build'
+            }
+        }
+        
+        stage('TEST') {
+            steps {
+                echo 'Message Test'
+            }
+        }
+        
+        stage('DEPLOY') {
+            steps {
+                echo 'Message Deploy'
+            }
+        }
+    }
+}
